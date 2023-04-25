@@ -1,7 +1,7 @@
 #### Khan's Algorithm for topoSort
 
 > Here we are going to talk about Khan's algorithm for toposort
- * We already saw the implementation of the [toposort algorithm using dfs](/Notes/Graphs/topologicalsort.md) .
+ * We already saw the implementation of the toposort algorithm using dfs.
  * Let's look at the implementation of the toposort algorithm using bfs traversal algorithm .
  * So basicallly the concept is that we will store the indegree of each of the nodes in a indegree vector 
  * If the indegree of any of the node is zero then we push that in the queue
