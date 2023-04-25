@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrisptechy=self.webpackChunkcrisptechy||[]).push([[2623],{1730:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/crisptechy/blog/tags/docusaurus","allTagsPath":"/crisptechy/blog/tags","count":4}')}}]);
