@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrisptechy=self.webpackChunkcrisptechy||[]).push([[179],{2202:e=>{e.exports=JSON.parse('{"permalink":"/crisptechy/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
