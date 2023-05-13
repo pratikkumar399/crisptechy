@@ -40,7 +40,10 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
 
-          editUrl: 'https://github.com/pratikkumar399/crisptechy',
+          editUrl: ({ docPath }) => {
+            const nextVersionDocsDirPath = 'docs';
+            return `https://github.com/pratikkumar399/crisptechy/tree/master/${nextVersionDocsDirPath}/${docPath}`;
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -61,13 +64,13 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          // { to: '/blog', label: 'Blog', position: 'left' },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Docs',
+          // },
+          { to: '/docs/intro', label: 'Tutorials', position: 'left' },
           {
             href: 'https://github.com/pratikkumar399/crisptechy',
             label: 'GitHub',
