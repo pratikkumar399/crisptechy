@@ -135,5 +135,31 @@ module.exports = {
 
       ],
     },
+    {
+      type: 'category',
+      label: 'OOPS',
+      link: {
+        type: 'generated-index',
+        title: 'OOPS IN CPP',
+        description: 'Learn OOPS in CPP',
+        keywords: ['guides'],
+        // image: '/img/docusaurus.png',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'OOPS',
+          link: {
+            type: 'doc',
+            id: 'OOPS/OOPS_IN_CPP',
+            // image: '/img/docusaurus.png',
+          },
+          items: [
+            'OOPS/OOPS_IN_CPP',
+            'OOPS/Cohesion_Coupling'
+          ]
+        }
+      ]
+    }
   ],
 };
