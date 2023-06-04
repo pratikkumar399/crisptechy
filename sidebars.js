@@ -78,11 +78,7 @@ module.exports = {
         {
           type: 'category',
           label: 'GitNotes',
-          link: {
-            type: 'doc',
-            id: 'DSA BLOGS/GitNotes/gitnotes',
-            // image: '/img/docusaurus.png',
-          },
+
           items: [
             'DSA BLOGS/GitNotes/gitnotes'
           ]
@@ -118,8 +114,10 @@ module.exports = {
               type: 'category',
               label: 'Traversals',
               link: {
-                type: 'doc',
-                id: 'DSA BLOGS/Trees/Traversals/inordertraversal',
+                type: 'generated-index',
+                title: 'Tree traversal',
+                description: 'Learn tree traversals',
+                keywords: ['guides'],
                 // image: '/img/docusaurus.png',
               },
               items: [
@@ -146,19 +144,8 @@ module.exports = {
         // image: '/img/docusaurus.png',
       },
       items: [
-        {
-          type: 'category',
-          label: 'OOPS',
-          link: {
-            type: 'doc',
-            id: 'OOPS/OOPS_IN_CPP',
-            // image: '/img/docusaurus.png',
-          },
-          items: [
-            'OOPS/OOPS_IN_CPP',
-            'OOPS/Cohesion_Coupling'
-          ]
-        }
+        'OOPS/OOPS_IN_CPP',
+        'OOPS/Cohesion_Coupling'
       ]
     },
     {
@@ -172,20 +159,11 @@ module.exports = {
         // image: '/img/docusaurus.png',
       },
       items: [
-        {
-          type: 'category',
-          label: 'NodeJs',
-          link: {
-            type: 'doc',
-            id: 'NodeJs/Node_intro',
-            // image: '/img/docusaurus.png',
-          },
-          items: [
-            'NodeJs/Node_intro',
-            'NodeJs/CommonJs',
-            'NodeJs/Os_module',
-          ]
-        }
+
+        'NodeJs/Node_intro',
+        'NodeJs/CommonJs',
+        'NodeJs/Os_module',
+        'NodeJs/Pathmodule',
       ]
     }
   ],
