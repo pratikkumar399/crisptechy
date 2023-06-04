@@ -160,6 +160,33 @@ module.exports = {
           ]
         }
       ]
+    },
+    {
+      type: 'category',
+      label: 'NodeJs',
+      link: {
+        type: 'generated-index',
+        title: 'NodeJs',
+        description: 'Learn backend using NodeJS',
+        keywords: ['guides'],
+        // image: '/img/docusaurus.png',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'NodeJs',
+          link: {
+            type: 'doc',
+            id: 'NodeJs/Node_intro',
+            // image: '/img/docusaurus.png',
+          },
+          items: [
+            'NodeJs/Node_intro',
+            'NodeJs/CommonJs',
+            'NodeJs/Os_module',
+          ]
+        }
+      ]
     }
   ],
 };
