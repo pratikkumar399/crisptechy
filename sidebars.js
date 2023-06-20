@@ -164,6 +164,7 @@ module.exports = {
         'NodeJs/CommonJs',
         'NodeJs/Os_module',
         'NodeJs/Pathmodule',
+        'NodeJs/ChildProcess'
       ]
     }
   ],
