@@ -127,6 +127,20 @@ module.exports = {
                 'DSA BLOGS/Trees/Traversals/levelordertraversal',
               ]
             },
+            {
+              type: 'category',
+              label: 'Ancestors',
+              link: {
+                type: 'generated-index',
+                title: 'Tree Ancestors',
+                description: 'Learn about ancestors',
+                keywords: ['guides'],
+                // image: '/img/docusaurus.png',
+              },
+              items: [
+                'DSA BLOGS/Trees/Ancestors/LowestCommonAncestors'
+              ]
+            },
           ]
         },
 
