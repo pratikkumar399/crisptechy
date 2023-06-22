@@ -141,6 +141,20 @@ module.exports = {
                 'DSA BLOGS/Trees/Ancestors/LowestCommonAncestors'
               ]
             },
+            {
+              type: 'category',
+              label: 'IntuitiveBinaryTrees',
+              link: {
+                type: 'generated-index',
+                title: 'IntuitiveBinaryTrees',
+                description: 'Learn about ancestors',
+                keywords: ['guides'],
+                // image: '/img/docusaurus.png',
+              },
+              items: [
+                'DSA BLOGS/Trees/IntuitiveBinaryTrees/SameTree'
+              ]
+            },
           ]
         },
 
