@@ -52,6 +52,18 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'interseries',
+        path: 'interviewseries',
+        routeBasePath: 'interviewseries',
+        sidebarPath: require.resolve('./sidebars2.js'),
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -71,6 +83,9 @@ const config = {
           //   label: 'Docs',
           // },
           { to: '/docs/intro', label: 'Tutorials', position: 'left' },
+          {
+            to: '/interviewseries/intro', label: 'Interview Series', position: 'left'
+          },
           {
             href: 'https://github.com/pratikkumar399/crisptechy',
             label: 'GitHub',
