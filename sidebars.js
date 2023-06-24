@@ -157,8 +157,32 @@ module.exports = {
             },
           ]
         },
-
-
+        {
+          type: 'category',
+          label: 'Dynamic Programming',
+          link: {
+            type: 'doc',
+            id: 'DSA BLOGS/DynamicProgramming/intro',
+            // image: '/img/docusaurus.png',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'KnapSack',
+              link: {
+                type: 'generated-index',
+                title: '0/1 KnapSack',
+                description: 'Learn KnapSack Pattern',
+                keywords: ['guides'],
+                // image: '/img/docusaurus.png',
+              },
+              items: [
+                'DSA BLOGS/DynamicProgramming/KnapSack/KnapSack',
+                'DSA BLOGS/DynamicProgramming/KnapSack/SubsetSum',
+              ]
+            }
+          ]
+        },
       ],
     },
     {
