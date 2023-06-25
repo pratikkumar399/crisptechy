@@ -60,22 +60,23 @@ Time Complexity : O(n^2)
 Space Complexity : O(n^2)
 
 Iterative approach: Remember just two values are important for each row , the previous row and the current row. and we can use the previous row to calculate the current row.
-> Add the values of the current -1 and current position of the previous row to get the current position of the current row.
+> Add the values of the current-1 and current position of the previous row to get the current position of the current row.
 
 ```cpp
 
 class Solution {
     public: 
 
-    vector<vector<int>> geneate(int rows){
-
+    vector<vector<int>> generate(int rows){
         vector<vector<int>> ans;
-        vector<int> temp;
         for(int i = 0 ; i < rows ; i++){
-            temp.push_back(1);
-            for(int j = 0 ; j < i-1 ; j++){
-                temp.push_back(ans[i-1][j] + ans[i-1][j+1]);
-            }   
+            // base case -> first and last element of each row is 1 
+            vector<int> temp(i+1,1);
+            // middle elements are the sum of the two elements above it.
+            // we are running the loop till i because the number of elements in each row is equal to the row number.
+            for(int j = 1 ; j < i ; j++){
+                temp[j] = ans[i-1][j-1] + ans[i-1][j];
+            }
             ans.push_back(temp);
         }
         return ans;

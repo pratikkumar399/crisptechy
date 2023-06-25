@@ -11,12 +11,12 @@ Let's discuss about the problem ,  what it demands and how to approach the probl
 
 // my approach
 
-```text
-Step 1  : first find the place where zero lies in the matrix and store them in a set to avoid duplication of the postiion . Maintain two sets one for row and one for col.
 
-Step 2 :  Now itereate through the matrix and then simply check if either the row or col any of them is present in the set , if yes then set the value of that position to zero.
+🎱 Step 1  : first find the place where zero lies in the matrix and store them in a set to avoid duplication of the position . Maintain two sets one for row and one for col.
 
-```
+🎱 Step 2 :  Now itereate through the matrix and then simply check if either the row or col any of them is present in the set , if yes then set the value of that position to zero.
+
+
 
 Code : 
 
@@ -54,11 +54,11 @@ class Solution {
 
 
 Another approach to optimize the space used :
-```
-What we can do is that instead of storing the rows and cols in a set , we can mark the row and cols in which the zero is present by setting the value of the first element of that row and col to zero.
 
-Now we can iterate through the matrix and check if the first element of that row or col is zero , if yes then set the value of that position to zero.
-```
+>> What we can do is that instead of storing the rows and cols in a set , we can mark the row and cols in which the zero is present by setting the value of the first element of that row and col to zero.
+
+>> Now we can iterate through the matrix and check if the first element of that row or col is zero , if yes then set the value of that position to zero.
+
 
 
 Optimized Code : 
@@ -106,5 +106,4 @@ class Solution {
 // Space Complexity : O(1) -
 
 ```
-
 
