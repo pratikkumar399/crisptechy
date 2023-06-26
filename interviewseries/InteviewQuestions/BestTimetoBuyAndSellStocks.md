@@ -76,3 +76,6 @@ class Solution {
         }
 };
 ```
+
+Time complexity of this approach : O(n) ->  because we are iterating over the array only once.
+Space complexity of this approach : O(1) -> No extra space is used.
