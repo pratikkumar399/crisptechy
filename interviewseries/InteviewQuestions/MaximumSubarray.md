@@ -33,29 +33,17 @@ public:
             return nums[0];
 
         }
-
         int max_sum = INT_MIN;
-
         // iterating over all the subarrays
-
         for(int i = 0 ; i < nums.size() ; i++){
-
             int sum = 0;
-
             for(int j = i ; j < nums.size() ; j++){
-
                 sum += nums[j];
-
                 max_sum = max(max_sum,sum);
-
             }
-
         }
-
         return max_sum;
-
     }
-
 };
 
 ```
