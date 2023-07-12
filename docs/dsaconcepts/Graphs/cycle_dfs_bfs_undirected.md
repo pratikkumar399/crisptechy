@@ -4,9 +4,9 @@
 
 **Concept**
 
-    > For finding a cycle in undirected graph , be it any of dfs or bfs traversals, we have to maintain a visited array.
-    > Now when we do the traversal, and find the adjacent node of the current node already visited, then the case of the cycle arises : 
-        👍It is a cycle if and only if the adjacent node has already been visited and is not the parent of the current node. 
+> For finding a cycle in undirected graph , be it any of dfs or bfs traversals, we have to maintain a visited array.
+
+> Now when we do the traversal, and find the adjacent node of the current node already visited, then the case of the cycle arises👍It is a cycle if and only if the adjacent node has already been visited and is not the parent of the current node. 
 
 
 ## DFS algorithm
@@ -15,14 +15,16 @@
     class Solution {
   public:
   bool isCycle_Check(int vertex , int parent ,vector<int> adj[] , vector<int>& visited){
-      
+      // mark the current node as visited
       visited[vertex] = true ;
       
       for(auto it: adj[vertex]){
           if(visited[it]==0){
-              if(isCycle_Check(it, vertex , adj ,visited))
-              return true ;
-          }  
+			// if the adjacent node has not been visited then mark it as visited
+              if(isCycle_Check(it, vertex , adj ,visited)) return true ;
+          } 
+		  // if the adjacent node has been visited and it is not the parent of the current node
+		  // then we can say that yes we have found a cycle in the graph 
           else if(it != parent) return true ;
       }
       
@@ -127,3 +129,4 @@ int main(){
 	return 0 ;
 }
 ```
+

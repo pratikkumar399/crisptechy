@@ -6,7 +6,7 @@
 
 > We will be using a dfs traversal to find the topological sort 
 
- * So the intuition is that after the completion of th dfa call for a node , when we backtrack we will add that node in the stack
+ * So the intuition is that after the completion of the dfs call for a node , when we backtrack we will add that node in the stack
 and this will make sure that the nodes are added in the linear order of their apprearance .
 
 Code for it 👍
@@ -45,7 +45,6 @@ class Solution
 	   while(!st.empty()){
 	       int topo =  st.top() ;
 	       st.pop() ;
-	       
 	       ans.push_back(topo) ;
 	       
 	   }
