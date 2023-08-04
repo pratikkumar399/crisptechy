@@ -15,6 +15,10 @@ class Tree{
         vector<int> list;
         stack<TreeNode*>st;
         
+        if(root == NULL){
+            return list;
+        }
+
         while(!st.empty() or root !=NULL){
             while(root != NULL){
                 st.push(root);

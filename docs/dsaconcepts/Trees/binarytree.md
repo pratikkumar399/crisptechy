@@ -52,15 +52,17 @@ class Node{
             while(!q.empty){
                 Node *currentNode =q.front();
                 q.pop();
-
+                // if the left child is empty then insert the node there
                 if(currentNode->left == NULL){
                     currentNode->left = new Node(val);
                     return;
                 }
+                // if the right child is empty then insert the node there
                 else if(currentNode->right == NULL){
                     currentNode->right = new Node(val);
                     return;
                 }
+                // if both the children are not empty then push them in the queue
                 else{
                     q.push(currentNode->left);
                     q.push(currentNode->right);
