@@ -16,87 +16,153 @@ A binary tree is a tree data structure where each node has at most two child nod
 
 ```cpp
 #include <bits/stdc++.h>
+using namespace std;
 
 class Node {
 public:
-    int val;
     Node* left;
     Node* right;
+    int val = 0;
 
     Node(int val) {
+        left = nullptr;
+        right = nullptr;
         this->val = val;
-        this->left = NULL;
-        this->right = NULL;
     }
 };
 
+
+Node* buildTree(Node *root){
+	cout<<"Enter the value : "<<endl;
+	int data;
+	cin>>data;
+	root = new Node(data);
+
+	if(data == -1){
+		return nullptr;
+	}
+
+	cout<<"Enter the value that you want to enter in the left of : "<< data<<endl;
+	root->left = buildTree(root->left);
+	cout<<"Enter the value that you want to enter in the right : " << data<<endl;
+	root->right = buildTree(root->right);
+
+
+	return root;
+
+}
+
 class BinaryTree {
 public:
+    Node* root;
     BinaryTree() {
-        root = NULL;
+        root = nullptr;
     }
 
-    // Iterative Insertion
     void insert(int val) {
-        if (root == NULL) {
+        if (root == nullptr) {
             root = new Node(val);
             return;
         }
-        std::queue<Node*> q;
+        queue<Node*> q;
         q.push(root);
 
         while (!q.empty()) {
-            Node* currentNode = q.front();
+            auto top = q.front();
             q.pop();
 
-            if (currentNode->left == NULL) {
-                currentNode->left = new Node(val);
+            if (top->left == nullptr) {
+                top->left = new Node(val);
                 return;
-            } else if (currentNode->right == NULL) {
-                currentNode->right = new Node(val);
+            } else if (top->right == nullptr) {
+                top->right = new Node(val);
                 return;
             } else {
-                q.push(currentNode->left);
-                q.push(currentNode->right);
+                q.push(top->left);
+                q.push(top->right);
             }
         }
     }
 
-    // Recursive Implementation
-    void addNode(int v) {
-        root = addNodeHelper(root, v);
-    }
+    void levelorderTraversal(Node* root) {
+        queue<Node*> q;
+        q.push(root);
+        q.push(nullptr);
 
-private:
-    Node* root;
+        while (!q.empty()) {
+            auto front = q.front();
+          
+            q.pop();
 
-    Node* addNodeHelper(Node* currentNode, int val) {
-        if (currentNode == NULL) {
-            return new Node(val);
+
+            if(front == nullptr){
+            	cout<<endl;
+            	if(!q.empty()){
+            		q.push(nullptr);
+            	}
+            }
+            else{
+            	cout << front->val << " ";
+            	if (front->left)
+                q.push(front->left);
+            	if (front->right)
+                q.push(front->right);
+            }
+
+            
         }
-
-        if (currentNode->left == NULL) {
-            currentNode->left = new Node(val);
-        } else if (currentNode->right == NULL) {
-            currentNode->right = new Node(val);
-        } else {
-            currentNode->left = addNodeHelper(currentNode->left, val);
-            currentNode->right = addNodeHelper(currentNode->right, val);
-        }
-
-        return currentNode;
     }
 };
 
+
+void levelorderTraversal(Node* root) {
+        queue<Node*> q;
+        q.push(root);
+        q.push(nullptr);
+
+        while (!q.empty()) {
+            auto front = q.front();
+          
+            q.pop();
+
+
+            if(front == nullptr){
+            	cout<<endl;
+            	if(!q.empty()){
+            		q.push(nullptr);
+            	}
+            }
+            else{
+            	cout << front->val << " ";
+            	if (front->left)
+                q.push(front->left);
+            	if (front->right)
+                q.push(front->right);
+            }
+
+            
+        }
+    }
+
+
 int main() {
-    BinaryTree tree;
-    tree.insert(1);
-    tree.insert(2);
-    tree.insert(3);
-    tree.insert(4);
-    tree.insert(5);
-    tree.insert(6);
-    tree.insert(7);
+    // BinaryTree tree;
+    // tree.insert(1);
+    // tree.insert(2);
+    // tree.insert(3);
+    // tree.insert(4);
+    // tree.insert(5);
+    // tree.insert(6);
+    // tree.insert(7);
+
+    // tree.levelorderTraversal(tree.root);
+
+    Node *root = nullptr;
+    root = buildTree(root);
+
+    levelorderTraversal(root);
+
+    return 0;
 }
 
 ```
