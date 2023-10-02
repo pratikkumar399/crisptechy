@@ -37,10 +37,42 @@ int  main(){
     });
 
     // without lambda function
-    
+
     bool compare(int a , int b){
         return b < a ;
     }
     sort(ans.begin(),ans.end(),compare);
 
+    // normal sort function -> sorts in ascending order
+    sort(ans.begin(),ans.end());
+
 ```
+### 3. Find sum of a vector using accumulate
+
+```cpp
+    vector<int> ans;
+    int sum = accumulate(ans.begin(),ans.end(),0);
+```
+
+### 4. Find the maximum element in a vector
+
+```cpp
+    vector<int> ans;
+    int max = *max_element(ans.begin(),ans.end());
+```
+
+### 5. Find the minimum element in a vector
+
+```cpp
+    vector<int> ans;
+    int min = *min_element(ans.begin(),ans.end());
+```
+
+### 6. Find the number of elements in a vector
+
+```cpp
+    vector<int> ans;
+    int size = ans.size();
+```
+
+
