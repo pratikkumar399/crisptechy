@@ -45,35 +45,45 @@ public:
         vector<vector<int>> res;
         sort(nums.begin(),nums.end());
         for(int i=0;i<nums.size();i++){
-            int target=-nums[i];
+            if((i > 0 )and( nums[i] == nums[i-1])) continue; // skip duplicates in the outer loop itself
             int front=i+1;
             int back=nums.size()-1;
             while(front<back){
-                int sum=nums[front]+nums[back];
-                if(sum<target)
+                int sum=nums[front]+nums[back] + nums[i]; // the triplets
+                if(sum<0)
                     front++;
-                else if(sum>target)
+                else if(sum>0)
                     back--;
                 else{
-                    vector<int> temp(3,0);
-                    temp[0]=nums[i];
-                    temp[1]=nums[front];
-                    temp[2]=nums[back];
-                    res.push_back(temp);
-                    //processing duplicates of number 2
-                    //rolling the front pointer to the next different number forwards
-                    while(front<back && nums[front]==temp[1]) front++;
-                    //processing duplicates of number 3
-                    //rolling the back pointer to the next different number backwards
-                    while(front<back && nums[back]==temp[2]) back--;
+                    res.push_back(vector<int> {nums[i], nums[front], nums[back]}); // in case we find the triplets
+                    while(front < back and nums[front]== nums[front+1]) front++; // remove duplicates in the middle
+                    while(front < back and nums[back]==nums[back-1]) back--;
+                    front++; // move to next potential triplets
+                    back--;
                 }
             }
-            //processing duplicates of number 1
-            while(i+1<nums.size() && nums[i+1]==nums[i]) i++;
         }
         return res;
     }
 };
+
+
+int main() {
+    Solution solution;
+    vector<int> nums = {-1, 0, 1, 2, -1, -4};
+    vector<vector<int>> result = solution.threeSum(nums);
+
+    cout << "Unique triplets that sum up to zero:" << endl;
+    for (const auto& triplet : result) {
+        for (int num : triplet) {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
 ```
 
 Time Complexity: O(n^2)
