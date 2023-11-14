@@ -52,7 +52,7 @@ Patterns in Dynamic Programming :
 
 
 
-## Dp problem patters
+## Dp problem patterns
 
 1. 0/1 KnapSack
 2. Longest Common Subsequence
