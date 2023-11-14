@@ -161,11 +161,15 @@ In the above code, notice the use of the `public` keyword after the colon. This 
 
 Inheritance is further divided into five types:
 
-a) Single Inheritance: There is only one derived class derived from the base class.
-b) Multiple Inheritance: Deriving a single class from multiple base classes is called multiple inheritance.
-c) Hierarchical Inheritance: Multiple classes are derived from a single base class.
-d) Multilevel Inheritance: One class derived from another class results in multilevel inheritance.
-e) Hybrid Inheritance: It refers to a combination of multiple types of inheritance under one roof.
+a) `Single Inheritance`: There is only one derived class derived from the base class.
+
+b) `Multiple Inheritance`: Deriving a single class from multiple base classes is called multiple inheritance.
+
+c) `Hierarchical Inheritance`: Multiple classes are derived from a single base class.
+
+d) `Multilevel Inheritance`: One class derived from another class results in multilevel inheritance.
+
+e) `Hybrid Inheritance`: It refers to a combination of multiple types of inheritance under one roof.
 
 ## Polymorphism
 
@@ -246,7 +250,7 @@ int main() {
 
 In the above code, we have two functions named `add()` with different parameter types. One takes two integers as arguments, and the other takes two doubles. When we call the `add()` function with different argument types, the appropriate function is selected at compile time based on the argument types. This is compile-time polymorphism as the decision on which function to call is made during the compilation process.
 
-> ## **Lets explore some more important concepts of OOPS:** 
+## **Lets explore some more important concepts of OOPS:** 
 
 1. `this`: It is a pointer that refers to the current instance of a class. It is used to access the members of the class within its member functions.
 
