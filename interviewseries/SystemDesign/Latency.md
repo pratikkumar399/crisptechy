@@ -14,7 +14,7 @@
 Causes of Latency: 
 
 ```
--> One of the measure factors contirbutinf to latency is outbound calls.
+-> One of the measure factors contirbuting to latency is outbound calls.
 -> Outbound calls are the calls made by the client to the server.
 ```
 > But the major causes are : 
