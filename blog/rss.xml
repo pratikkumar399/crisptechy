@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>CripsTechy Blog</title>
+        <link>https://github.com/crisptechy/blog</link>
+        <description>CripsTechy Blog</description>
+        <lastBuildDate>Wed, 24 Jan 2024 06:46:42 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[intro]]></title>
+            <link>https://github.com/crisptechy/blog/intro</link>
+            <guid>https://github.com/crisptechy/blog/intro</guid>
+            <pubDate>Wed, 24 Jan 2024 06:46:42 GMT</pubDate>
+            <description><![CDATA[Hello this is blog Section]]></description>
+            <content:encoded><![CDATA[<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hello-this-is-blog-section">Hello this is blog Section<a href="#hello-this-is-blog-section" class="hash-link" aria-label="Direct link to Hello this is blog Section" title="Direct link to Hello this is blog Section">​</a></h4>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ReactEnvironment]]></title>
+            <link>https://github.com/crisptechy/blog/ReactEnvironment</link>
+            <guid>https://github.com/crisptechy/blog/ReactEnvironment</guid>
+            <pubDate>Wed, 24 Jan 2024 06:46:42 GMT</pubDate>
+            <description><![CDATA[React Rendering Environment]]></description>
+            <content:encoded><![CDATA[<h4 class="anchor anchorWithStickyNavbar_LWe7" id="react-rendering-environment">React Rendering Environment<a href="#react-rendering-environment" class="hash-link" aria-label="Direct link to React Rendering Environment" title="Direct link to React Rendering Environment">​</a></h4><blockquote><p>Lets talk about How React works in different environments.</p></blockquote>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/crisptechy/blog</id>
+    <title>CripsTechy Blog</title>
+    <updated>2024-01-24T06:46:42.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/crisptechy/blog"/>
+    <subtitle>CripsTechy Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[intro]]></title>
+        <id>https://github.com/crisptechy/blog/intro</id>
+        <link href="https://github.com/crisptechy/blog/intro"/>
+        <updated>2024-01-24T06:46:42.000Z</updated>
+        <summary type="html"><![CDATA[Hello this is blog Section]]></summary>
+        <content type="html"><![CDATA[<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hello-this-is-blog-section">Hello this is blog Section<a href="#hello-this-is-blog-section" class="hash-link" aria-label="Direct link to Hello this is blog Section" title="Direct link to Hello this is blog Section">​</a></h4>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ReactEnvironment]]></title>
+        <id>https://github.com/crisptechy/blog/ReactEnvironment</id>
+        <link href="https://github.com/crisptechy/blog/ReactEnvironment"/>
+        <updated>2024-01-24T06:46:42.000Z</updated>
+        <summary type="html"><![CDATA[React Rendering Environment]]></summary>
+        <content type="html"><![CDATA[<h4 class="anchor anchorWithStickyNavbar_LWe7" id="react-rendering-environment">React Rendering Environment<a href="#react-rendering-environment" class="hash-link" aria-label="Direct link to React Rendering Environment" title="Direct link to React Rendering Environment">​</a></h4><blockquote><p>Lets talk about How React works in different environments.</p></blockquote>]]></content>
+    </entry>
+</feed>
