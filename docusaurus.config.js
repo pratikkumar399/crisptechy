@@ -86,6 +86,7 @@ const config = {
           {
             to: '/interviewseries/intro', label: 'Interview Series', position: 'left'
           },
+          { to: '/blog', label: 'Blogs', position: 'left' },
           {
             href: 'https://github.com/pratikkumar399/crisptechy',
             label: 'GitHub',
@@ -109,10 +110,10 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/pratikkumar399/crisptechy',
